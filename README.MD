@@ -1,3 +1,5 @@
+
+
 # 🛡️ Real-Time Ransomware Detection System
 
 Welcome to the **Real-Time Ransomware Detection System**! This project is designed to provide a comprehensive solution for detecting ransomware attacks in real-time. By monitoring system activities and analyzing potential threats, the system aims to identify and respond to ransomware behaviors promptly, helping to safeguard valuable data and maintain system integrity.
@@ -43,13 +45,12 @@ Follow these steps to set up the project locally.
     cd Real-Time-Ransomware-Detection-System
     ```
 
-2. **Set up the backend**:
+2. **Install dependencies and run the monitor**:
     ```bash
-    cd backend
-    pip install -r requirements.txt
-    python run.py
+    pip install -e .
+    start-monitoring
     ```
-    The backend server will start on [http://localhost:5000](http://localhost:5000).
+    The monitoring service will start watching the paths configured in `app/config.py`.
 
 3. **Set up the frontend**:
     ```bash
